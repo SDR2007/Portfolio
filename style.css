@@ -61,7 +61,7 @@ body{
 }
 
 .nav ul li a:hover{
-    color: red;
+    color: royalblue;
     transition: 0.5s;
 }
 
@@ -79,7 +79,7 @@ body{
     content: "";
     position: absolute;
     bottom: 0;
-    background: rgba(213,153,0,1.0);;
+    background: red;
     height: 3px;
     left: auto;
     right: 0;
