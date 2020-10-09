@@ -1,0 +1,701 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize);
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+body::-webkit-scrollbar {
+  width: 8px;  
+}
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1) ;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.336) ; 
+  border-radius: 20px; 
+}
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+
+body{
+    background: rgba(0,0,0,0.9);
+    background-image: url(Pics/bg.png);
+    background-size: 30% auto;
+    animation: bganim 50s infinite ease;
+}
+
+.nav{
+    width: 100%px;
+    height: auto;
+    padding: 15px;
+    background: rgba(255,255,255,0.001);
+}
+
+.nav h1{
+    color: white;
+    font-family: 'Electrolize';
+    font-size: 45px;
+    float: left;
+    transition: transform .2s;
+}
+
+.nav ul{
+    text-align: right;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.nav ul li{
+    display: inline;
+    line-height: 60px;
+    padding: 10px;
+    color: white;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-family: 'Electrolize';
+    color: white;
+    transition: 0.5s;
+    
+}
+
+.nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.nav h1:hover{
+    color: royalblue;
+    transform: scale(1.06);
+}
+
+.link--underline-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.link--underline-effect:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: rgba(213,153,0,1.0);;
+    height: 3px;
+    left: auto;
+    right: 0;
+    width: 0px;
+    -webkit-transition: all .5s cubic-bezier(.23,1,.32,1);
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+}
+  
+.link--underline-effect:hover:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.head{
+    background-color: teal;
+    width: 100%px;
+    height: 250px;
+    padding: 25px;
+    background: rgba(255,255,255,0.2);
+}
+
+.head img{
+    height: 250px;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+}
+
+.about{
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Electrolize';
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.about p{
+    width: 400px;
+    font-family: 'Coming Soon', cursive;
+}
+
+.about1{
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Electrolize';
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.about1 p{
+    width: 400px;
+    font-family: 'Coming Soon', cursive;
+}
+
+.skill{
+    width: 100%px;
+    height: auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.1);
+}
+
+.skill h1{
+    color: white;
+    font-family: 'Electrolize';
+    text-align: center;
+    text-shadow: 0 0 20px black;
+    font-weight: 700;
+}
+
+.skills{
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    font-family: 'Coming Soon', cursive;
+    text-shadow: 0 0 20px black;
+    font-weight: 700;
+    box-shadow: 0 0 20px black;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: transform .2s;
+}
+
+.skills:hover{
+    transform: scale(1.11);
+    background: rgba(0,0,0,0.8);
+}
+
+.education{
+    width: 100%px;
+    height: auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.2);
+}
+
+.education h1{
+    text-align: center;
+    font-family: 'Electrolize';
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.sumedha{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    height: auto;
+    padding: 25px;
+    margin-top: 20px;
+    transition: transform .2s;
+}
+
+.sumedha img{
+    height: 200px;
+}
+
+.sumedha h3{
+    color: dimgrey;
+}
+
+.sumedha a{
+    color: red;
+    text-decoration: none;
+}
+
+.sumedha a:hover{
+    text-decoration: underline;
+}
+
+.sumedha:hover{
+    transform: scale(1.06);
+    background: rgba(0,0,0,0.8);
+}
+
+.ananda{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    height: auto;
+    padding: 25px;
+    margin-top: 20px;
+    transition: transform .2s;
+}
+
+.ananda img{
+    height: 200px;
+}
+
+.ananda h3{
+    color: dimgrey;
+}
+
+.ananda a{
+    color: red;
+    text-decoration: none;
+}
+
+.ananda a:hover{
+    text-decoration: underline;
+}
+
+.ananda:hover{
+    transform: scale(1.06);
+    background: rgba(0,0,0,0.8);
+}
+
+.work{
+    width: 100%px;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: rgba(255,255,255,0.1);
+}
+
+.work h1{
+    text-align: center;
+    font-family: 'Electrolize';
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.work1{
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    margin-top: 20px;
+    transition: transform .2s;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 4px solid black;
+    font-family: 'Electrolize';
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.work1 p{
+    font-family: 'Coming Soon', cursive;
+}
+
+.work1:hover{
+    transform: scale(1.06);
+    background: rgba(0,0,0,0.8);
+}
+
+.work1 img{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 4px solid black;
+}
+
+.work1 a{
+    color: red;
+    text-decoration: none;
+}
+
+.work1 a:hover{
+    text-decoration: underline;
+}
+
+.expe{
+    width: 100%px;
+    height: auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.2);
+}
+
+.expe h1{
+    text-align: center;
+    font-family: 'Electrolize';
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    height: auto;
+    padding: 25px;
+    margin-top: 20px;
+    transition: transform .2s;
+}
+
+.content img{
+    height: 200px;
+}
+
+.content h3{
+    color: dimgrey;
+}
+
+.content a{
+    color: red;
+    text-decoration: none;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+
+.content:hover{
+    transform: scale(1.06);
+    background: rgba(0,0,0,0.8);
+}
+
+.contact{
+    width: 100%px;
+    height: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+}
+
+.contact h1{
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+    font-family: 'Electrolize';
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)); 
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    color: black;
+
+}
+
+#comments{
+    max-width: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#comments input,#comments textarea{
+    display:block;
+    width:100%;
+    padding:10px;
+    border:none;
+    margin-bottom:10px;
+    background: rgba(0,0,0,0.4);
+    color:white;
+    font-family: 'Electrolize';
+    transition:.5s ease all;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    border: 4px solid rgba(255,255,255,0.4);
+    font-weight: 700;
+}
+#comments input::-webkit-input-placeholder,#comments textarea::-webkit-input-placeholder{
+    color:white;
+    font-family: 'Electrolize';
+}
+#comments input:-moz-placeholder,#comments textarea:-moz-placeholder{
+    color: white;
+    opacity:1;
+    font-family: 'Electrolize';
+}
+#comments input::-moz-placeholder,#comments textarea::-moz-placeholder{
+    color: white;
+    opacity:1;
+    font-family: 'Electrolize';
+}
+#comments input:-ms-input-placeholder,#comments textarea:-ms-input-placeholder{
+    color: white;
+    font-family: 'Electrolize';
+}
+#comments input:focus,#comments textarea:focus{
+    outline:none;
+    background: rgba(255,255,255,0.4);
+    border: 4px solid rgba(0,0,0,0.6);
+    color: white;
+}
+#comments textarea{
+    height:150px;
+    resize:none;
+    color: white;
+    font-family: 'Electrolize';
+    border-radius: 10px;
+}
+#comments button{
+    display:block;
+    width:100%;
+    height: 40px;
+    background: rgba(0,0,0,0.4);
+    border: 4px solid rgba(255,255,255,0.4);
+    font-family: 'Electrolize';
+    padding:5px 10px;
+    font-weight:700;
+    color: white;
+    transition:.5s ease all;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#comments button:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1));
+}
+
+.icon{
+    width: 100%px;
+    height: auto;
+    background-color: teal;
+    padding: 25px;
+    background: rgba(255,255,255,0.2);
+}
+
+.icon i{
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-size: 55px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: transform .2s;
+}
+
+.icon i:hover{
+    transform: scale(1.06);
+    color: rgba(0,0,0,0.8);
+}
+
+.copy{
+    background: rgba(255, 255, 255, 0.001); 
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-family: 'Electrolize';
+}
+
+.sidenav{
+    display: none;
+}
+
+.io{
+    display: none;
+}
+
+@keyframes bganim{
+   0%{ background-position-x: 0%}
+   50%{ background-position-x: 100%}
+   100%{background-position-x: 0%}
+}
+
+@media only screen and (max-width: 767px) {
+    .io button{
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .io{
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: -70px;
+    }
+    
+    .sidenav {
+       height: 100%;
+       width: 0; 
+       position: fixed; 
+       z-index: 1;
+       top: 0; 
+       left: 0;
+       background:rgba(0,0,0,0.9); 
+       overflow-x: hidden; 
+       padding-top: 60px; 
+       transition: 0.5s; 
+       display: block;
+    }
+
+   .sidenav a {
+       text-decoration: none;
+       font-family: 'Electrolize';
+       color: white;
+       font-weight: 700;
+       transition: 0.5s;
+       display: block;
+       font-size: 25px;
+       padding: 28px 8px 8px 32px;
+    }
+
+   .sidenav a:hover {
+       color:royalblue;
+       transition: 0.5s;
+    }
+    
+   .sidenav .closebtn {
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       margin-left: 50px;
+    }
+    
+    .nav ul{
+        display: none;
+    }
+    
+    .nav{
+        height: 60px;
+    }
+    
+    .head img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .head{
+        height: auto;
+    }
+    
+    .about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .head p{
+        width: auto;
+    }
+    
+    .head h1{
+        margin-top: 20px;
+    }
+    
+    .sumedha img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 180px;
+    }
+    
+    .ananda img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .about p{
+        width: auto;
+    }
+    
+    .about1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .about1 p{
+        width: auto;
+    }
+    
+    .content img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .head img{
+        height: 200px;
+    }
+    
+    .nav h1{
+        font-size: 38px;
+    }
+    
+    .sumedha img{
+        height: 155px;
+    }
+    
+    .content img{
+        height: 150px;
+    }
+    
+     .work1{
+        width: 280px;
+         height: auto;
+    }
+    
+    .work1 img{
+        width: 280px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 851px) {
+    .head img{
+        height: 240px;
+    }
+    
+    .sumedha img{
+        height: 165px;
+    }
+    
+    .content img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .about1 p{
+        width: auto;
+    }
+}
